@@ -173,7 +173,29 @@
     color: #03a9f4;
 }
 
-@media (max-width: 420px) {
+.home {
+    position: relative;
+    top: -50px;
+}
+.about {
+    position: relative;
+}
+.projects {
+    position: relative;
+    top: 50px;
+}
+
+@media (max-width: 768px) {
+    .showcase {
+        padding: 50px;
+    }
+    .showcase header {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 425px) {
     .showcase, .showcase header {
         padding: 40px;
     }

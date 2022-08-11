@@ -173,13 +173,50 @@
     color: #03a9f4;
 }
 
-@media (max-width: 420px) {
+.skillist {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 20px;
+    list-style: none;
+}
+
+.skillist > li:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+.home {
+    position: relative;
+    top: -50px;
+}
+.about {
+    position: relative;
+}
+.projects {
+    position: relative;
+    top: 50px;
+}
+
+@media (max-width: 768px) {
+    .showcase {
+        padding: 50px;
+    }
+    .showcase header {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+@media (max-width: 425px) {
     .showcase, .showcase header {
         padding: 40px;
     }
 
+    .text  {
+        width: inherit;
+    }
+
     .text h2 {
-        font-size: 3em;
+        font-size: 2.5em;
     }
 
     .text h3 {
@@ -188,6 +225,10 @@
 
     .text p {
         font-size: 0.6em;
+    }
+
+    .skillist {
+        grid-template-columns: 100px 100px;
     }
 
     .showcase.active {
