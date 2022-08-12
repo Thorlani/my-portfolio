@@ -11,7 +11,10 @@
 <body>
     <section class="showcase">
         <header>
-            <h2 class="logo">About</h2>
+            <div class="flex">
+                <h2 class="logo">About</h2>
+                <img src="./avatar.jpeg" alt="avatar logo" class="avatar">
+            </div>
             <div class="toggle"></div>
         </header>
 
@@ -34,14 +37,35 @@
                 <li class="eight">Node JS</li>
                 <li class="nine">Express JS</li>
             </ul>
-            <a href="#">Hire me</a>
+            <button class="show">Hire me</button>
         </div>
 
         <ul class="social">
-            <li><a href=""><img src="./facebook.png" alt=""></a></li>
-            <li><a href=""><img src="./instagram.png" alt=""></a></li>
-            <li><a href=""><img src="./twitter.png" alt=""></a></li>
+            <li><a href="https://github.com/Thorlani"><img src="./github.svg" alt="github logo" class="img"></a></li>
+            <li><a href="https://twitter.com/tolani_popoola"><img src="./twitter.png" alt="twitter logo" ></a></li>
         </ul>
+    </section>
+
+    <section class="background">
+        <div class="container">
+            <button class="full">
+                <div class="top"></div>
+                <div class="bottom"></div>
+            </button>
+            <div>
+                <h2>Thank you for wanting to Hire Me</h2>
+                <p>Please help fill this form to let me know how I can help you.</p>
+            </div>
+
+            <form action="https://formspree.io/f/xleveney" method="POST" id="my-form">
+                <input type="text" name="name" id="name" placeholder="Name">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="text" name="subject" id="subject" placeholder="Job Title">
+                <textarea name="message" id="message" placeholder="Job description"></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <div id="status"></div>
+        </div>
     </section>
 
     <div class="menu">

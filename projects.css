@@ -21,7 +21,7 @@
 }
 
 .showcase.active {
-    right: 300px;
+    right: 50%;
 }
 
 .showcase header {
@@ -34,6 +34,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 190px;
+    justify-content: space-between;
+}
+
+.avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .logo {
@@ -78,19 +93,12 @@
     mix-blend-mode: overlay; */
 }
 
-.span {
-    position: absolute;
-    bottom: 100px;
-    z-index: 10px;
-    color: #fff;
-    display: none;
-}
-
 .text {
+    margin-top: 60px;
     position: relative;
     z-index: 10;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     row-gap: 40px;
     column-gap: 70px;
 }
@@ -103,6 +111,7 @@
     width: 300px;
     transition: 0.4s ease-in-out;
     border-radius: 10px;
+    padding-bottom: 10px;
 }
 
 .card h1 {
@@ -196,11 +205,15 @@
     transform: scale(0.5) translateY(-15px);
 }
 
+.img {
+    color: #fff;
+}
+
 .menu {
     position: absolute;
     top: 0;
     right: 0;
-    width: 300px;
+    width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -234,6 +247,16 @@
     top: 50px;
 }
 
+@media (max-width: 1024px) {
+    .text {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card {
+        width: 350px;
+    }
+}
+
 @media (max-width: 768px) {
     .showcase {
         padding: 50px;
@@ -242,8 +265,11 @@
         padding-left: 50px;
         padding-right: 50px;
     }
+    .text {
+        margin-top: 100px;
+    }
     .card {
-        width: 250px;
+        width: 300px;
     }
 }
 
@@ -253,17 +279,21 @@
         padding-top: 20px;
     }
 
-    .span {
-        display: block;
-    }
-
     .text {
-        margin-top: 30px;
-        overflow-x: auto;
+        margin-top: 130px;
+        grid-template-columns: 1fr;
+        height: 600px;
+        overflow: auto;
+        margin-bottom: 40px;
         scroll-behavior: smooth;
-        column-gap: 100px;
+    }
+    .text::-webkit-scrollbar {
+        display: none;
     }
 
+    .card {
+        width: 100%;
+    }
 
     .text h2 {
         font-size: 3em;
@@ -278,10 +308,10 @@
     }
 
     .showcase.active {
-        right: 150px;
+        right: 60%;
     }
 
     .menu {
-        width: 150px;
+        width: 50%;
     }
 }
