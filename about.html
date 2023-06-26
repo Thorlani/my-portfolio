@@ -1,81 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thorlani's Portfolio</title>
-    <link rel="stylesheet" href="about.css">
-    <link rel="shortcut icon" href="./avatar.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="about.css" />
+    <link rel="shortcut icon" href="./assets/avatar.jpeg" type="image/x-icon" />
     <script src="script.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <section class="showcase">
-        <header>
-            <div class="flex">
-                <h2 class="logo">About</h2>
-                <img src="./avatar.jpeg" alt="avatar logo" class="avatar">
-            </div>
-            <div class="toggle"></div>
-        </header>
-
-        <video src="flexing.mp4" muted loop autoplay></video>
-
-        <div class="overlay"></div>
-
-        <div class="text">
-            <h2>Get to Know Me</h2>
-            <p>I am a 300 level law student at the University of Lagos, Nigeria. I began my web development career in the year 2020.</p>
-            <p>Currently, my web development skills includes:</p>
-            <ul class="skillist">
-                <li class="one">HTML</li>
-                <li class="two">CSS</li>
-                <li class="three">Tailwind CSS</li>
-                <li class="four">Javascript</li>
-                <li class="five">React JS</li>
-                <li class="six">Next JS</li>
-                <li class="seven">Firebase</li>
-                <li class="eight">Node JS</li>
-                <li class="nine">Express JS</li>
-            </ul>
-            <button class="show">Hire me</button>
+      <header>
+        <div class="flex">
+          <h2 class="logo">About</h2>
+          <img src="./assets/avatar.jpeg" alt="avatar logo" class="avatar" />
         </div>
+        <div class="toggle">
+          <div class="top"></div>
+          <div class="middle"></div>
+          <div class="bottom"></div>
+        </div>
+      </header>
 
-        <ul class="social">
-            <li><a href="https://github.com/Thorlani"><img src="./github.svg" alt="github logo" class="img"></a></li>
-            <li><a href="https://twitter.com/tolani_popoola"><img src="./twitter.png" alt="twitter logo" ></a></li>
+      <video src="./assets/flexing.mp4" muted loop autoplay></video>
+
+      <div class="overlay"></div>
+
+      <div class="text">
+        <h2>Get to Know Me</h2>
+        <p>
+          I am a 400 level law student at the University of Lagos, Nigeria. I
+          began my web development career in the year 2020.
+        </p>
+        <p>Currently, my web development skills includes:</p>
+        <ul class="skillist">
+          <li class="one">React JS</li>
+          <li class="two">Next JS</li>
+          <li class="three">React Native</li>
+          <li class="four">TypeScript</li>
+          <li class="five">Redux</li>
+          <li class="five">Tailwind CSS</li>
+          <li class="six">Firebase</li>
+          <li class="seven">MongoDB</li>
+          <li class="eight">Node JS</li>
+          <li class="nine">Express JS</li>
+          <li class="nine">Git</li>
         </ul>
+        <button class="show">Hire me</button>
+      </div>
+
+      <ul class="social">
+        <li>
+          <a
+            href="https://github.com/Thorlani"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="./assets/github.svg" alt="github logo" class="img"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/tolani_popoola"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="./assets/twitter.png" alt="twitter logo"
+          /></a>
+        </li>
+      </ul>
     </section>
 
     <section class="background">
-        <div class="container">
-            <button class="full">
-                <div class="top"></div>
-                <div class="bottom"></div>
-            </button>
-            <div>
-                <h2>Thank you for wanting to Hire Me</h2>
-                <p>Please help fill this form to let me know how I can help you.</p>
-            </div>
-
-            <form action="https://formspree.io/f/xleveney" method="POST" id="my-form">
-                <input type="text" name="name" id="name" placeholder="Name">
-                <input type="email" name="email" id="email" placeholder="Email">
-                <input type="text" name="subject" id="subject" placeholder="Job Title">
-                <textarea name="message" id="message" placeholder="Job description"></textarea>
-                <button type="submit">Send</button>
-            </form>
-            <div id="status"></div>
+      <div class="container">
+        <button class="full">
+          <div class="top"></div>
+          <div class="bottom"></div>
+        </button>
+        <div>
+          <h2>Thank you for wanting to Hire Me</h2>
+          <p>Please help fill this form to let me know how I can help you.</p>
         </div>
+
+        <form
+          action="https://formspree.io/f/xleveney"
+          method="POST"
+          id="my-form"
+        >
+          <input type="text" name="name" id="name" placeholder="Name" />
+          <input type="email" name="email" id="email" placeholder="Email" />
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            placeholder="Job Title"
+          />
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Job description"
+          ></textarea>
+          <button type="submit">Send</button>
+        </form>
+        <div id="status"></div>
+      </div>
     </section>
 
     <div class="menu">
-        <ul>
-            <li class="home"><a href="./index.html">Home</a></li>
-            <li class="about"><a href="#">About</a></li>
-            <li class="projects"><a href="./projects.html">Projects</a></li>
-        </ul>
+      <ul>
+        <li class="home"><a href="./index.html">Home</a></li>
+        <li class="about"><a href="#">About</a></li>
+        <li class="projects"><a href="./projects.html">Projects</a></li>
+      </ul>
     </div>
-    
-</body>
+  </body>
 </html>
